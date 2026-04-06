@@ -157,6 +157,13 @@
 			}
 		}
 	},
+	"customTemplates": [
+		{
+			"name": "page-pasona",
+			"title": "PASONA法則LP",
+			"postTypes": ["page"]
+		}
+	],
 	"templateParts": [
 		{
 			"name": "header",
