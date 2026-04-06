@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'AISAKU_VERSION', '1.0.0' );
+define( 'AISAKU_THEME_VERSION', '1.0.0' );
 
 function aisaku_setup() {
 	add_theme_support( 'wp-block-styles' );
@@ -22,7 +22,7 @@ function aisaku_enqueue_styles() {
 		'aisaku-style',
 		get_stylesheet_uri(),
 		array(),
-		AISAKU_VERSION
+		AISAKU_THEME_VERSION
 	);
 }
 add_action( 'wp_enqueue_scripts', 'aisaku_enqueue_styles' );
