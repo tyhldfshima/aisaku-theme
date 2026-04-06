@@ -26,3 +26,10 @@ function aisaku_enqueue_styles() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'aisaku_enqueue_styles' );
+
+function aisaku_register_block_pattern_category() {
+	register_block_pattern_category( 'aisaku', array(
+		'label' => __( 'AI-SAKU', 'aisaku' ),
+	) );
+}
+add_action( 'init', 'aisaku_register_block_pattern_category' );
